@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "region": "Antofagasta",
+      "comuna": "Antofagasta",
+      "sedes": "Agencia Antofagasta Sede Antofagasta",
+      "contacto": "Av. Grecia N 840, Antofagasta +56 225155350/+56225155251",
+      "servicios": "Administración Prestaciones económicas Prevención",
+      "horarioapertura": "Lun - Dom 08:00",
+      "horariocierre":  "17:00"
+    }
+  ]
+}

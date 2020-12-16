@@ -1,39 +1,52 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using PruebaTecnicaACHS.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PruebaTecnicaACHS.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class achsController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        private readonly ILogger<achsController> _logger;
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public achsController(ILogger<achsController> logger)
         {
             _logger = logger;
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public RestfulResponse Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            try
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+                string path = @"./Data/data.json";
+                using (System.IO.StreamReader jsonStream = System.IO.File.OpenText(path))
+                {
+
+                    string json = jsonStream.ReadToEnd();
+                    DataResponse data = JsonConvert.DeserializeObject<DataResponse>(json);
+
+                    return new RestfulResponse
+                    {
+                        IsSuccess = true,
+                        Result = data.Data
+                    };
+
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+
+                return new RestfulResponse
+                {
+                    IsSuccess = false,
+                    Message = "Error al leer la información."
+                };
+            }
         }
     }
 }

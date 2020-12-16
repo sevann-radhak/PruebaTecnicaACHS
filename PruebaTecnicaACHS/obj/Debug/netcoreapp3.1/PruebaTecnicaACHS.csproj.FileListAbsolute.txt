@@ -18,3 +18,6 @@ E:\Sevann\PruebaTecnicaACHS\PruebaTecnicaACHS\obj\Debug\netcoreapp3.1\PruebaTecn
 E:\Sevann\PruebaTecnicaACHS\PruebaTecnicaACHS\obj\Debug\netcoreapp3.1\PruebaTecnicaACHS.dll
 E:\Sevann\PruebaTecnicaACHS\PruebaTecnicaACHS\obj\Debug\netcoreapp3.1\PruebaTecnicaACHS.pdb
 E:\Sevann\PruebaTecnicaACHS\PruebaTecnicaACHS\obj\Debug\netcoreapp3.1\PruebaTecnicaACHS.genruntimeconfig.cache
+E:\Sevann\PruebaTecnicaACHS\PruebaTecnicaACHS\bin\Debug\netcoreapp3.1\Data\data.json
+E:\Sevann\PruebaTecnicaACHS\PruebaTecnicaACHS\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Sevann\PruebaTecnicaACHS\PruebaTecnicaACHS\obj\Debug\netcoreapp3.1\PruebaTecnicaACHS.csproj.CopyComplete
