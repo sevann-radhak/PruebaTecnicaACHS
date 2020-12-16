@@ -1,4 +1,6 @@
-﻿namespace PruebaTecnicaACHS.Models
+﻿using System.Collections.Generic;
+
+namespace PruebaTecnicaACHS.Models
 {
     public class AgencyEntity
     {
@@ -8,6 +10,6 @@
         public string HorarioCierre { get; set; }
         public string Region { get; set; }
         public string Sedes { get; set; }
-        public string Servicios { get; set; }
+        public List<string> Servicios { get; set; }
     }
 }

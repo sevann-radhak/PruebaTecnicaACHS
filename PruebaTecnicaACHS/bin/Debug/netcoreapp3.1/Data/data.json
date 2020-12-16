@@ -4,10 +4,28 @@
       "region": "Antofagasta",
       "comuna": "Antofagasta",
       "sedes": "Agencia Antofagasta Sede Antofagasta",
-      "contacto": "Av. Grecia N 840, Antofagasta +56 225155350/+56225155251",
-      "servicios": "Administración Prestaciones económicas Prevención",
+      "contacto": "Av. Grecia N 840, Antofagasta +56 225155350/+56225155351",
+      "servicios": ["Administracion", "Prestaciones economicas", "Prevencion"],
       "horarioapertura": "Lun - Dom 08:00",
-      "horariocierre":  "17:00"
+      "horariocierre": "17:00"
+    },
+    {
+      "region": "Antofagasta",
+      "comuna": "Antofagasta",
+      "sedes": "Agencia Antofagasta Sede Antofagasta",
+      "contacto": "Av. Grecia N 840, Antofagasta +56 225155350/+56225155351",
+      "servicios": [ "Atencion Medica", "Servicio de Evaluaciones Laborales", "Vigilancia Medica"],
+      "horarioapertura": "Lun - Dom 08:00",
+      "horariocierre": "19:00"
+    },
+    {
+      "region": "Antofagasta",
+      "comuna": "Mejillones",
+      "sedes": "Agencia Antofagasta Sede Antofagasta",
+      "contacto": "Almirante Lattorre N 712, Mejillones +56 225155350/+56225155351",
+      "servicios": [ "Atencion Medica" ],
+      "horarioapertura": "Lun - Dom 08:00",
+      "horariocierre": "20:00"
     }
   ]
 }
